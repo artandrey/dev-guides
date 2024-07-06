@@ -48,7 +48,7 @@ class Reminder {
     public description: string;
     public eventDate: Date;
 
-    // check if the reminder belongs to an event in the future or not
+    // check if the reminder belongs to an event in the past or not
     public isPassed() {
         return this.eventDate < new Date();
     }
